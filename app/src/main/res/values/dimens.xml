@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="for_data_padding">8dp</dimen>
+    <dimen name="text_size_data">8sp</dimen>
+    <dimen name="text_size_sky">100sp</dimen>
+    <dimen name="text_size_temperature">80sp</dimen>
+    <dimen name="text_size_gradus">24sp</dimen>
+    <dimen name="for_gradus_padding">20dp</dimen>
+    <dimen name="text_size_city">20sp</dimen>
+    <dimen name="for_city_padding">0dp</dimen>
+    <dimen name="for_country_padding">4dp</dimen>
+    <dimen name="text_size_country">10sp</dimen>
+</resources>
