@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONObject;
 
@@ -92,8 +93,8 @@ public class CoatOfArmsFragment extends Fragment {
                 if (json == null) {
                     handler.post(new Runnable() {
                         public void run() {
-//                            Toast.makeText(CoatOfArmsFragment.this, CoatOfArmsFragment.this.getString(R.string.place_not_found),
-//                                    Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(), getString(R.string.place_not_found),
+                                    Toast.LENGTH_LONG).show();
                         }
                     });
                 } else {

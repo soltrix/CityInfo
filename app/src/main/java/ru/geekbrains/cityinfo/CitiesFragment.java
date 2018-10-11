@@ -16,8 +16,8 @@ import static ru.geekbrains.cityinfo.CoatOfArmsFragment.PARCEL;
 // Фрагмент выбора города из списка
 public class CitiesFragment extends ListFragment {
 
-    boolean isExistCoatofarms;  // Можно ли расположить рядом фрагмент с гербом
-    Parcel currentParcel;
+    private boolean isExistCoatofarms;  // Можно ли расположить рядом фрагмент с гербом
+    private Parcel currentParcel;
 
     // При создании фрагмента, укажем его макет
     @Override
