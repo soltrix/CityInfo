@@ -4,6 +4,7 @@ import android.app.FragmentTransaction;
 import android.app.ListFragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,10 +78,16 @@ public class CitiesFragment extends ListFragment {
 
     // Показать герб. Ecли возможно, то показать рядом со списком,
     // если нет, то открыть второе активити
-    private void showCoatOfArms(Parcel parcel) {
+    private void showCoatOfArms(final Parcel parcel) {
         if (isExistCoatofarms) {
             // Выделим текущий элемент списка
-            getListView().setItemChecked( parcel.getImageIndex(), true);
+//            getListView().setItemChecked( parcel.getImageIndex(), true);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    getListView().setItemChecked(parcel.getImageIndex(), true);
+                }
+            }, 300);
 
             // Проверим, что фрагмент с гербом существует в активити
             CoatOfArmsFragment detail = (CoatOfArmsFragment)
